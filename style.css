@@ -1,0 +1,368 @@
+*{
+    font-family: "Montserrat", serif;
+    margin:0px;
+   background-color:black;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+.main-content{
+    /*remaining space is given to main-content after giving size to all div */
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    background-color: #121212;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 73px;
+    background-color: black;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    
+}
+.nav{
+   background-color: #121212;
+    border-radius: 1rem;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.8rem;
+
+}
+.nav-option{
+    background-color: #121212;
+    line-height: 40px;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem ;
+}
+.nav-option:hover{
+    opacity: 1.3;
+}
+.nav-option i{
+    font-size: 1.25rem;
+    background-color: #121212;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+    background-color: #121212;
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem ;
+    
+}
+
+.lib-option img{
+   height: 1.25rem;
+   width: 1.25rem;
+}
+.lib-option{
+    opacity: 0.7;
+    background-color: #121212;
+    line-height: 40px;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem ;
+}
+.lib-option:hover{
+    opacity: 1.3;
+}
+.lib-option a{
+    margin-left: 1rem;
+    font-size: 1rem;
+    background-color: #121212;
+}
+.icons{
+    font-size: 1.26rem;
+    background-color: #121212;
+   
+}
+.icons i:hover{
+    opacity: 1.2;
+}
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+    background-color: #121212;
+}
+.box{
+    height: 120px;
+    background-color:#232323;
+    border-radius: .80rem;
+    margin:0.75rem  0 1.75rem 0;
+    padding: 0.75rem 1.25rem;
+}
+.box1{
+    font-size: 1rem;
+    background-color: #232323;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.box2{
+    font-size: 0.75rem;
+    opacity: 0.9;
+    background-color: #232323;
+    margin-top: 1.25rem;
+}
+.badge{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 650;
+    margin-top: 8px;
+    height: 24px;
+    width: fit-content;
+    opacity: 0.6;
+}
+.badge:hover{
+    opacity: 1;
+}
+.box1:hover{
+    font-size: 1.2rem;
+}
+.box2:hover{
+    font-size: 0.87rem;
+}
+
+.lib-box{
+    background-color:#121212;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem 0 1rem 0;
+    z-index: 10;
+}
+.sticky-nav img{
+    background-color: #121212;
+}
+.sticky-nav-icons{
+    
+    margin-left: 0.75rem;
+}
+.sticky-nav-download{
+    margin-right: 1.5rem;
+}
+.sticky-nav-download button{
+    margin-right: 1rem;
+}
+.nav-dark{
+    background-color: black;
+    color: white;
+}
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card-container{
+    display: flex;
+    width: 190px;
+     background-color: #121212;
+     
+}
+.card img{
+    width: 100%;
+    border-radius:0.5rem ;
+}
+.card{
+    border-radius:0.6rem;
+    padding: 1rem;
+    background-color: #121212;
+    height: 242px;
+    width: 250px;
+    margin-left: 1.5rem;
+    box-shadow: 0 5px 12px rgba(rgba(0, 0, 0, 0.579));
+}
+.cards{
+    background-color: #121212;
+}
+
+.card-title{
+    font-size: 600;
+}
+.card-info
+{
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+.card2{
+    display: flex;
+    background-color: #121212;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.card1{
+    background-color: #121212;
+    margin-top:1rem;
+    padding-bottom: 1.5rem;
+}
+.card2 .card{
+    margin-top: 1rem;
+}
+.card3{
+    display: flex;
+    background-color:#121212;
+    padding-top: 1.5rem;
+    
+}
+.card:hover{
+    box-shadow: 0 5px 12px rgb(219, 227, 220);
+}
+.footer{
+    height: 227px;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    height: 50%;
+    width: 90%;
+    background-color:#121212;
+    opacity: 0.5;
+    border-top: 1px solid white;
+}
+.album{
+    height: 73px;
+    width: 386px;
+   
+    display: flex;
+}
+.album img{
+    height: 56px;
+    width: 56px;
+    border-radius: 10px;
+    margin: 7px 0 0 10px;
+}
+.name{
+    height: 25px;
+    width: 135px;
+    
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    padding-left: 0.6rem;
+}
+.raval{
+    height: 25px;
+    width: 135px;
+    
+    font-size: 0.6rem;
+    margin-top: 2rem;
+    padding-left: 0.6rem;
+    padding-top: 0.5rem;
+    margin-left: -9rem;
+}
+.album i{
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+}
+.music{
+    width: 759px;
+    height: 73px;
+    display: flex;
+}
+.control{
+    height: 73px;
+    width: 386px;
+    display: flex;
+}
+.control i{
+    padding-left: 1.75rem;
+    padding-top: 1.35rem;
+}
+.control input{
+    margin-left: 0.6rem;
+    margin-top: -0.5rem;
+}
+.player-control{
+    height: 1rem;
+}
+
+.music1{
+    
+    height: 50%;
+    width: 100%;
+    padding-left: 45%;
+    padding-top: 0.75rem;
+}
+.music2{
+    
+    height: 50%;
+    width: 100%;
+    margin-top: 2.2rem;
+    margin-left: -48rem;
+}
+.music1 img{
+    height: 50%;
+    padding-left: 1rem;
+}
+.music2{
+    padding-left: 4rem;
+    padding-top: 0.5rem;
+}
+.music2 input{
+    width: 70%;
+    height: 0.4rem;
+    color: green;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.music2 input::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.music2 input::-webkit-slider-thumb{
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color:#1bd760 ;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+
+
+
+
+
+
+
+
